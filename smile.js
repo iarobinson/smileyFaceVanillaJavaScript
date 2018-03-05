@@ -1,9 +1,9 @@
 window.onload = function() {
   drawSmileyFace();
-}
-
-function mixItUp() {
-  drawSmileyFace();
+  
+  var clickAnywhere = document.body.addEventListener('click', function() {
+    drawSmileyFace();
+  });
 }
 
 function randomColor() {
