@@ -12,15 +12,30 @@
       color: blue;
     }
     
+    p {
+      font-size: 10px;
+      color: white;
+    }
+    
     canvas {
       background-color: black;
     }
     
+    .noselect {
+      -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+         -khtml-user-select: none; /* Konqueror HTML */
+           -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome and Opera */
+    }
   </style>
 </head>
-<body onclick="mixItUp()">
+<body onclick="mixItUp()" class="noselect">
     <center>
       <h1>smile</h1>
+      <p>click to party</p>
       <canvas width='500' height='500' id="smile"></canvas>
     </center>
 </body>
