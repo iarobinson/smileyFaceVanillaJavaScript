@@ -2,6 +2,10 @@ window.onload = function() {
   drawSmileyFace();
 }
 
+function mixItUp() {
+  console.log('mixitupcalled')
+  drawSmileyFace();
+}
 
 function randomColor() {
   var colors = ['red', 'blue', 'oragne', 'green', 'pink'];
@@ -42,7 +46,7 @@ function drawSmileyFace() {
   
   // Smile
   context.beginPath();
-  context.arc(250, 200, 200, 20, degreesToRadians(140), false);
+  context.arc(250, 300, 100, degreesToRadians(20), degreesToRadians(160), false);
   context.fillStyle = randomColor();
   context.fill();
   context.stroke();
